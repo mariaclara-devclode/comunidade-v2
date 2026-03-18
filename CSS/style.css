@@ -1,24 +1,24 @@
 /*Reset básico */
-texto-comum, titulo-site, subtitulo {
+.texto-comum, .titulo-site, .subtitulo {
     font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 /* Flexbox no Cabeçalho */
-cabecalho-principal {
+.cabecalho-principal {
     display: flex;
     justify-content: space-between; /* Afasta o titulo do menu */
     align-items: center; /* Centraliza verticalmente */
-    background-color: #15375a;  
+    background-color: #f8f9fa;  
     padding: 20px;
     border-bottom: 2px solid #e9ecef;
 
      }
-menu-navegacao {
+.menu-navegacao {
     display: flex;
     gap: 15px; /* Espaço entre os links */
 
 }
-link-menu {
+.link-menu {
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -28,7 +28,7 @@ link-menu {
 }
 
 /* Layout Corpo da Página */
-container-layout {
+.container-layout {
     display: flex;
     gap: 30px;
     padding: 20px;
@@ -37,7 +37,7 @@ container-layout {
 
 }
  
-conteudo-principal {
+.conteudo-principal {
     flex: 3; /* Ocupa 3 partes do espaço disponivel */
     background-color: #ffffff;
     padding: 20px;
@@ -45,18 +45,18 @@ conteudo-principal {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
 }
-barra-lateral {
+.barra-lateral {
     flex: 1; /* Ocupa 1 parte do espaço (fica mais estreito que o principal} */
-    background-color: #2f353b;
+    background-color: #e9ecef;
     padding: 20px;
     border-radius: 8px;
 }
 
 /* Efeito de interatividade nos links */
-link-menu {
+.link-menu {
     transition: background-color 0.3s, color 0.3s ease; /* Transição suave de 0.3 segundos */
 }
-link-menu:hover {
+.link-menu:hover {
     background-color: #0056b3;
     color: #ffffff;
 }
