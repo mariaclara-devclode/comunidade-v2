@@ -1,62 +1,109 @@
 /*Reset básico */
-.texto-comum, .titulo-site, .subtitulo {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+.texto-comum,
+.titulo-site,
+.subtitulo {
+  font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 /* Flexbox no Cabeçalho */
 .cabecalho-principal {
-    display: flex;
-    justify-content: space-between; /* Afasta o titulo do menu */
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #f8f9fa;  
-    padding: 20px;
-    border-bottom: 2px solid #e9ecef;
-
-     }
+  display: flex;
+  justify-content: space-between; /* Afasta o titulo do menu */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #5B6BD4;
+  padding: 20px;
+  border-bottom: 2px solid #e7f1fc;
+}
 .menu-navegacao {
-    display: flex;
-    gap: 15px; /* Espaço entre os links */
-
+  display: flex;
+  gap: 15px; /* Espaço entre os links */
 }
 .link-menu {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
 
+.formulario-cadastro {
+  display: flex;
+  flex-direction: column; /* Coloca os campos um embaixo do outro */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.rotulo-campo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo-entrada {
+  width: 40%;
+  align-self: flex-start;
+  padding: 10px;
+  border: 1px solid #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.botao-enviar {
+  background-color: #3A3E54;
+  color: #ffffff;
+  padding: 8px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: default;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.botao-enviar.hover {
+  background-color: #3A3E54;
 }
 
 /* Layout Corpo da Página */
 .container-layout {
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Centraliza o container na tela */
-
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o container na tela */
 }
- 
-.conteudo-principal {
-    flex: 3; /* Ocupa 3 partes do espaço disponivel */
-    background-color: #ffffffc2;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
+.conteudo-principal {
+  flex: 3; /* Ocupa 3 partes do espaço disponivel */
+  background-color: #656EAB;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #425BFF;
 }
 .barra-lateral {
-    flex: 1; /* Ocupa 1 parte do espaço (fica mais estreito que o principal} */
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 8px;
+  flex: 1; /* Ocupa 1 parte do espaço (fica mais estreito que o principal} */
+  background-color: #425BFF;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.rodape-site {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #616580;
+  color: #e9ecef;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Efeito de interatividade nos links */
 .link-menu {
-    transition: background-color 0.3s, color 0.3s ease; /* Transição suave de 0.3 segundos */
+  transition: background-color 0.3s, color 0.3s ease; /* Transição suave de 0.3 segundos */
 }
 .link-menu:hover {
-    background-color: #0056b3;
-    color: #ffffff;
+  background-color: #0056b3;
+  color: #ffffff;
 }
