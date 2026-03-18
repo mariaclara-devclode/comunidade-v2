@@ -39,7 +39,7 @@
  
 .conteudo-principal {
     flex: 3; /* Ocupa 3 partes do espaço disponivel */
-    background-color: #ffffff;
+    background-color: #ffffffc2;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
